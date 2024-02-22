@@ -1,0 +1,40 @@
+/* .form{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    color: black;
+    margin: auto;
+    height: 200px;
+    padding: 50px;
+    
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    padding: 4px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(56, 53, 53);
+    color: white;
+    border: none;
+}
+input{
+    height: 30px;
+    padding: 5px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: x-large;
+
+} */

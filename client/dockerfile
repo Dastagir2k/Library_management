@@ -1,0 +1,20 @@
+# Use the official Node.js 14 image as base
+FROM node:14
+
+# Set working directory in the container
+WORKDIR C:\Users\S Dastagir Ahmed\Downloads\libarary-managemnts\client
+
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the client application files
+COPY . .
+
+# Expose the port that the React app runs on
+EXPOSE 5173
+
+# Command to run the React app
+CMD ["npm", "start"]
