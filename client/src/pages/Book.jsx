@@ -51,8 +51,8 @@ const Book = () => {
                         )}
                         {/* console.log(book.cover); */}
                     <h2>Book Title :{book.title}</h2>
-                    <p>{book.decr}</p>
-                    <span>{book.price}</span>
+                    <p>Description :{book.descr}</p>
+                    <span> Total Stocks :{book.price}</span>
                     <button className="delete" onClick={()=>handledelete(book.id)}>Delete</button>
                     <button className="update"><Link to={`/update/${book}`}>Update</Link></button>
                 </div>

@@ -38,7 +38,7 @@ const Homepage = () => {
           draggable: true,
           progress: undefined,
         });
-        window.location.reload();
+        // window.location.reload();
       })
       .catch((err) => {
         console.error("Error booking slot:", err);
@@ -89,9 +89,9 @@ const Homepage = () => {
                   style={{ width: "100px", height: "100px" }} // Adjust the size as needed
                 />
               )}
-              <h2>{book.title}</h2>
-              <p>{book.descr}</p>
-              <span>{book.price}</span>
+              <h2>Book Title :{book.title}</h2>
+              <p> Description :{book.descr}</p>
+              <span>Total Stock :{book.price}</span>
               {/* <button className="delete"onClick={() => BookMessage()}>{message}</button> */}
               <button
                 onClick={() => BookMessage(book.title)}

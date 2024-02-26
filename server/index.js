@@ -24,10 +24,10 @@ const storage=multer.diskStorage({
     }
 })
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "root",
-  database: "library",
+  user: "uvus2ces5057b5od",
+  host: "bhahnmvnnoykstku4uel-mysql.services.clever-cloud.com",
+  password: "Lv94X6NXpmIshR3QTNjO",
+  database: "bhahnmvnnoykstku4uel",
 });
 
 
