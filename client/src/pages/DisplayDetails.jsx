@@ -6,7 +6,7 @@ const DisplayDetails = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get("http://localhost:6060/details");
+        const response = await axios.get("https://library-management-1-2ls6.onrender.com/details");
         setBooks(response.data);
         console.log(response.data);
       } catch (err) {

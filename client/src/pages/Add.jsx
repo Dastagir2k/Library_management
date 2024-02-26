@@ -83,7 +83,7 @@ const Add = () => {
       formData.append("price", price);
       formData.append("cover", cover); // Append the file to the FormData object
       
-      await axios.post("http://localhost:6060/add-book", formData, {
+      await axios.post("https://library-management-1-2ls6.onrender.com/add-book", formData, {
         headers: {
           "Content-Type": "multipart/form-data" // Set content type to multipart/form-data
         }

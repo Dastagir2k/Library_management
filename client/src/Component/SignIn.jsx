@@ -12,7 +12,7 @@ const SignIn = () => {
     }
     let navigate=useNavigate();
     function addDetailsToDb(){
-        Axios.post('http://localhost:6060/create-login',{
+        Axios.post('https://library-management-1-2ls6.onrender.com/create-login',{
             name:name,
             password:password,
         }).then(()=>{

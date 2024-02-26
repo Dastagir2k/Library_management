@@ -23,7 +23,7 @@ const Homepage = () => {
     //   draggable: true,
     //   progress: undefined,
     // });
-    Axios.post("http://localhost:6060/books-slot", {title})
+    Axios.post("https://library-management-1-2ls6.onrender.com/books-slot", {title})
       .then((res) => {
         console.log(res);
         console.log("name", name);
@@ -49,7 +49,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await Axios.get("http://localhost:6060/books");
+        const response = await Axios.get("https://library-management-1-2ls6.onrender.com/books");
         setBooks(response.data);
         console.log(response.data);
       } catch (err) {
@@ -84,7 +84,7 @@ const Homepage = () => {
             <div className="book" key={book.id}>
               {book.cover && (
                 <img
-                  src={`http://localhost:6060/images/${book.cover}`}
+                  src={`https://library-management-1-2ls6.onrender.com/images/${book.cover}`}
                   alt={book.title}
                   style={{ width: "100px", height: "100px" }} // Adjust the size as needed
                 />

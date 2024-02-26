@@ -15,7 +15,7 @@ const Book = () => {
     useEffect(()=>{
         const fetchBook=async()=>{
             try {
-                const response=await axios.get("http://localhost:6060/books")
+                const response=await axios.get("https://library-management-1-2ls6.onrender.com/books")
                 setBooks(response.data)
                 console.log(response.data);
             } catch (err) {
@@ -26,7 +26,7 @@ const Book = () => {
     },[])
     const handledelete= async(id)=>{
         try{
-            await axios.delete("http://localhost:6060/books/"+id);
+            await axios.delete("https://library-management-1-2ls6.onrender.com/books/"+id);
             window.location.reload();
         }catch(err){
             console.log(err);
@@ -44,7 +44,7 @@ const Book = () => {
                     {/* {book.cover && <img src={`http://localhost:6060/images/${book.cover}`} alt="" />} */}
                     {book.cover && (
                             <img
-                            src={`http://localhost:6060/images/${book.cover}`}
+                            src={`https://library-management-1-2ls6.onrender.com/images/${book.cover}`}
                                 alt={book.title}
                                 style={{ width: "100px", height: "100px" }} // Adjust the size as needed
                             />

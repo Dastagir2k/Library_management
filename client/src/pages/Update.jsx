@@ -17,7 +17,7 @@ const Update = () => {
   const handleClick= async(e)=>{
     e.preventDefault();
     try{
-        await axios.post("http://localhost:6060/add-book",{
+        await axios.post("https://library-management-1-2ls6.onrender.com/add-book",{
             _id:bookid,
             title : title ,
             desc : desc ,
